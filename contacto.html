@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Contacto</title>
+</head>
+<body>
+	<!-- get: manda por la url, parametros que usa para su busqueda
+		 post: 
+		 action: es un link al que le va a mandar los datos-->
+	<form method="post" action="enviar.php">
+		<label form="nombre">Nommbre: </label>
+		<input type="text" placeholder="Escribí tu nombre" required name="nombre">
+		<br/>
+		<label form="email">Emial: </label>
+		<input type="email" placeholder="Ingresá tu email" required name="email">
+		<br/>
+		<label form="password">Password: </label>
+		<input type="password" placeholder="Ingresá tú password" required name="password">
+		<br/>
+		<label form="telefono">Telefono: </label>
+		<input type="tel" placeholder="Ingresá tu telefono" name="telefono">
+		<br/>
+		<input type="checkbox" name="terminos" required> Acepta terminos y condiciones.
+		<br/>
+		<label form="productos">Elegi un producto: </label>
+		<select name="productos">
+			<option value="producto1">Plan Basico</option> 
+			<option value="producto2" selected>Plan Medium</option>
+			<option value="producto3">Plan Premium</option>
+		</select>
+		<br/>
+		<label form="pago">Forma de pago:</label>
+		<br/>
+		<input type="radio" name="pago" value="tarjeta"> Tarjeta de Crédito
+		<br/>
+		<input type="radio" name="pago" value="efectivo"> Efectivo
+		<br/>
+		<input type="radio" name="pago" value="transferencia"> Transferencia
+		<br/>
+		<label form="mensaje">Mensaje</label>
+		<textarea name="mensaje" placeholder="Dejanos tu mensaje"></textarea>
+		<br/>
+		<input type="submit" value="Enviar Formulario">
+	</form>
+</body>
+</html>
